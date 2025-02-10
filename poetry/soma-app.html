@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/soma-app.css" href="soma-app.js">
+    <title>Soma App - Better Sleep</title>
+    <style>
+        body {
+            background-color: black;
+            color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to bottom, #111, #222);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 20px aqua, 0 0 40px aqua;
+            margin: 0;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 20px;
+        }
+
+        .button-container a button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            color: white;
+            background: linear-gradient(to bottom, #222, #444);
+            border: 2px solid aqua;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button-container a button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px aqua, 0 0 30px aqua;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            color: aliceblue;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsif untuk perangkat dengan layar kecil */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .button-container a button {
+                padding: 15px 30px;
+                font-size: 1.2em;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOMA FOR BETTER SLEEP</h1>
+    </header>
+    <div class="glow"></div>
+    <div class="flame"></div>
+    <div class="button-container">
+        <a href="sleep.html"><button>SLEEP SONGS</button></a>
+        <a href="bedtips.html"><button>BED TIPS</button></a>
+        <a href="somaf.html"><button>SLEEP FRIEND</button></a>
+    </div>
+    <footer>
+        <p>Web ini dibuat untuk membantu para pengidap insomnia tidur lebih baik.</p>
+        <p style="margin-top: 10px; color: lightgray; font-size: 0.85em;">
+            <strong>Insomnia</strong> adalah gangguan tidur yang membuat seseorang sulit tidur atau tetap tertidur, 
+            yang dapat memengaruhi kesehatan dan kualitas hidup secara keseluruhan.
+        </p>
+        <p style="margin-top: 15px; font-size: 0.9em; font-weight: bold; text-shadow: 0 0 10px lime, 0 0 20px lime; color: lime;">
+            Developed by POSLOCK
+        </p>
+    </footer>
+    
+</body>
+</html>
